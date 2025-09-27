@@ -1,0 +1,15 @@
+services:
+  - type: web
+    name: Eistee Pfirsich
+    env: node
+    buildCommand: npm install
+    startCommand: npm start
+    envVars:
+      - key: PORT
+        value: 8080
+    autoDeploy: true
+    healthCheckPath: /
+    disk:
+      name: Eistee Pfirsich-data
+      mountPath: /data
+      sizeGB: 1

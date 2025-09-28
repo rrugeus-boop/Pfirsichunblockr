@@ -128,3 +128,5 @@ function shutdown() {
     process.exit(0);
   });
 }
+
+export default app;
